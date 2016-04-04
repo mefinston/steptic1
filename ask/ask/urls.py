@@ -9,12 +9,12 @@ urlpatterns = patterns('',
     # url(r'^blog/', include('blog.urls')),
 
    url(r'^admin/', include(admin.site.urls)),
-   url(r'^$', views.error404),
-   url(r'^login/$', views.error404),
-   url(r'^signup/$', views.error404),
+   url(r'^$', views.test),
+   url(r'^login/', views.test),
+   url(r'^signup/$', views.test),
    url(r'^question/([0-9]{3})/$', views.test ),
-   url(r'^ask/$', views.error404),
-   url(r'^popular/$', views.error404),
-   url(r'^new/$', views.error404),
+   url(r'^ask/', views.test),
+   url(r'^popular/', views.test),
+   url(r'^new/', views.test),
 
 )
